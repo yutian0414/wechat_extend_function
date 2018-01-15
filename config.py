@@ -1,3 +1,4 @@
+#主要功能命令
 function_code={
 		"stock":'gp',
 		"sound_identify":'yy',
@@ -5,7 +6,9 @@ function_code={
 		'image_text_identify':'ii'
 }
 
-stock_of_main=[
+#关心股票数据
+
+stock_of_care=[
 			{'sz002295':'精艺股份'},
 			{'sz002195':'二三四五'},
 			{'sz002681':'奋达科技'},
@@ -17,14 +20,16 @@ stock_of_main=[
 			{"sz000785":"武汉中商"}
 ]
 
-stock_care=[
+#大盘数据
+
+stock_main=[
 	
 	{'sh000001':'shanghai'},
 	{'sz399001':'shenzheng'}
 ]
 
 
-
+#翻译语言对照
 lang={
 	
 		'auto': '自动检测',
@@ -58,24 +63,31 @@ lang={
 		'vie':	'越南语',
 
 }
-
+#打开语音识别命令
 open_yy=False  
+#打开翻译命令
 open_trans=False
+#打开图片识别功能
+open_image_identify=False
 
+#默认从自动翻译到英文
 trans_to='en'
 trans_from='auto'
 uuid=''
 
-open_image_identify=False
-
+#百度帐号应用相关认证信息
 API_KEY='vt9vGGzbV9sIdbSkXdlq5bZn'
 APP_ID='10685094'
 SECRET_KEY='0T8yNycZEWMHZnpVAzA9gL3CaS0Q4gZv'
 
+#常用命令
 OPEN_FUNC=['open','o']
 CLOSE_FUNC=['close','c']
 HELP_FUNC=['help','h']
 
+#朋友nickname表
 friends_nickname_list=[]
+#聊天室nickname表
 chatrooms_nickname_list=[]
+#公众号nickname表
 mps_nickname_list=[]

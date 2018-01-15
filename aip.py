@@ -32,6 +32,12 @@ class BaiduRest:
 		fp.write(voice_data.content)
 		fp.close()	
 
+#获取语音识别内容，
+#  	1.打开原mp3文件，读取原始数据
+#	2.将原始数据放到AudioSegment中进行处理
+#	3.新建wav格式文件，设置参数，将处理后对数据写入
+#	4.读取wav格式文件数据，并设置将发送对url参数
+#	5.组合成url，进行post请求。
 	def getText(self,filename):
 
 		wav_fp=open(filename,'rb')
